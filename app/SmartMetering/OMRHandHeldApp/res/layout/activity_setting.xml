@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <TableRow
+            android:id="@+id/settingTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f0f0f0" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/img_actionbar_setting_press_btn"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/tv_Title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="환경설정 "
+                    android:textColor="#666666"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_Logout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_UserId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="15dp"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="@color/Red"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_Logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:text=" 로그아웃"
+                    android:textColor="#95A5A6"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="23dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tv_Logout"
+                    android:background="@drawable/img_setting_arrow" />
+            </RelativeLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_AutoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_AutoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="    자동로그인 "
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/switch_AutoLogin"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/selector_switch_btn"
+                android:padding="15dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_OtherLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_OtherLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    다른 아이디 로그인 "
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_Encoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_Encoding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    문자인코딩"
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_LocationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_LocationInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    지역정보설정 "
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_Transmission_Server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_Transmission_Server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    전송서버설정 "
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_StorageDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_StorageDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    저장소 삭제 설정 "
+                android:textColor="#555555"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_VerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_VerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    버전 정보  "
+                android:textColor="#555555"
+                android:textSize="25sp" >
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <TableRow
+            android:id="@+id/tr_AppHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_AppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="    도움말  "
+                android:textColor="#555555"
+                android:textSize="25sp" >
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_setting_arrow" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+    </TableLayout>
+
+</LinearLayout>

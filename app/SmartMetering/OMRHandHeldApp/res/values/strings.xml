@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Settings Start -->
+    <string name="app_name">OMRHandHeldApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <!-- Global Settings End -->
+    <!-- LoginActivity Start -->
+    <string name="loginpage_title">OMR Handheld App</string>
+    <string name="loginpage_subtitle">아이디와 비밀번호를 입력하세요.</string>
+    <string name="loginpage_write_id">&#160;&#160;아이디를 입력하세요.</string>
+    <string name="loginpage_write_pw">&#160;&#160;비밀번호를 입력하세요.</string>
+    <string name="loginpage_check_save_id">아이디 저장</string>
+    <string name="loginpage_check_auto_login">자동 로그인</string>
+    <string name="loginpage_confirm_btn">확인</string>
+    <string name="loginpage_version">V 1.0</string>
+    <!-- LoginActivity End -->
+    <!-- MainActivity Start -->
+    <string name="mainpage_title">초기화면</string>
+    <string name="mainpage_collection_btn">미터정보 수집</string>
+    <string name="mainpage_states_confirm_btn">저장정보 확인</string>
+    <string name="mainpage_logout_btn">로그아웃</string>
+    <!-- MainActivity End -->
+    <!-- Meter_Activity Start -->
+    <string name="meterpage_rescan_btn">재스캔</string>
+    <string name="meterpage_collection_btn">수집</string>
+    <string name="meterpage_back_btn">뒤로가기</string>
+    <!-- Meter_Activity End -->
+
+    <string name="title_activity_custom_dialog">CustomDialog</string>
+    <string name="title_activity_temp_page">TempPage</string>
+    <string name="title_activity_design_sample_page">DesignSamplePage</string>
+
+</resources>

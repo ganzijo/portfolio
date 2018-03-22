@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript"
+	src="file:///android_asset/fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript"
+	src="file:///android_asset/fusioncharts/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript" charset="utf-8">
+	FusionCharts.ready(function() {
+		
+		var revenueChart = new FusionCharts({
+			"type" : "mscolumn2d",
+			"renderAt" : "chartContainer",
+			"width" : "760",
+			"height" : "560",
+			"dataFormat" : "json",
+			"dataSource" : {
+				"chart" : {
+					"caption" : "가스 소비 현황",
+					"yAxisName" : "사용량(Nm3)",
+					"formatNumber" : "1",
+					"plotFillAlpha" : "80",
+					"paletteColors" : "#FFA500",
+					"baseFontColor" : "#333333",
+					"baseFont" : "Helvetica Neue,Arial",
+					"baseFontSize" : "24",
+					"captionFontSize" : "24",
+					"subcaptionFontSize" : "14",
+					"subcaptionFontBold" : "0",
+					"showBorder" : "1",
+					"bgColor" : "#ffffff",
+					"showShadow" : "0",
+					"canvasBgColor" : "#ffffff",
+					"canvasBorderAlpha" : "0",
+					"divlineAlpha" : "100",
+					"divlineColor" : "#999999",
+					"divlineThickness" : "1",
+					"divLineDashed" : "1",
+					"divLineDashLen" : "1",
+					"divLineGapLen" : "1",
+					"usePlotGradientColor" : "0",
+					"showplotborder" : "0",
+					"valueFontColor" : "#ffffff",
+					"placeValuesInside" : "1",
+					"showHoverEffect" : "1",
+					"rotateValues" : "1",
+					"showXAxisLine" : "1",
+					"xAxisLineThickness" : "1",
+					"xAxisLineColor" : "#999999",
+					"showAlternateHGridColor" : "0",
+					"legendPosition" : "RIGHT",
+					"legendBgAlpha" : "0",
+					"legendBorderAlpha" : "0",
+					"legendShadow" : "0",
+					"legendItemFontSize" : "24",
+					"legendItemFontColor" : "#666666"
+				},
+				"categories" : [ {
+					"category" : [ {
+						"label" : "작년동월"
+					}, {
+						"label" : "전전월"
+					}, {
+						"label" : "전월"
+					}, {
+						"label" : "현월"
+					} ]
+				} ],
+				"dataset" : [ {
+					"seriesname" : "가스",
+					"formatnumberscale":"1",
+					"data" : [ {
+						"value" : "dataSet_gas_value_4"//"{dataSet_gas_value_1}"
+					}, {
+						"value" : "dataSet_gas_value_3"//"{dataSet_gas_value_2}"
+					}, {
+						"value" : "dataSet_gas_value_2"//"{dataSet_gas_value_3}"
+					}, {
+						"value" : "dataSet_gas_value_1"//"{dataSet_gas_value_4}"
+					} ]
+				} ]
+			}
+		});
+		revenueChart.render();
+	});
+</script>
+</head>
+<body>
+	<div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>

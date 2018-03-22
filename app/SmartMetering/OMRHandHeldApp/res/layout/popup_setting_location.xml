@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="#CD5143"
+            android:gravity="center"
+            android:text=" 위치 정보 설정"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_height="2dip"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#eeeeee" />
+
+        <ScrollView
+            android:layout_width="600dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <RadioGroup
+                android:id="@+id/radiogruop"
+                android:layout_width="600dp"
+                android:layout_height="300dp"
+                android:layout_gravity="right"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+            </RadioGroup>
+        </ScrollView>
+
+        <TableRow
+            android:id="@+id/table10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:id="@+id/btn_Location_Popup_Confirm"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common2_btn"
+                android:text="확인"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_Location_Popup_cancel"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common2_btn"
+                android:padding="10dp"
+                android:text="취소"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

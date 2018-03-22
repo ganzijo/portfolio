@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_modemId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모뎀 아이디"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemFinalReadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최종검침일"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemStates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상태"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_modemIdValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemIdValues"
+                android:text="2_1"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemAddressValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemAddressValues"
+                android:text="x"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemFinalReadDateValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemFinalReadDateValues"
+                android:text="2_3"
+                android:textColor="#177FA0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_modemStatesValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemStatesValues"
+                android:text="2_4"
+                android:textColor="#E82121"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/ck_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/selector_main_checkbox" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

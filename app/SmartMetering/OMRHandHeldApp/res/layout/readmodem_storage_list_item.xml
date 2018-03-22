@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_lastLinkTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최종검침일"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검침상태"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_modemId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모뎀아이디"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_modemAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_lastLinkTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lastLinkTimeValue"
+                android:hint="lastLinkTimeValue"
+                android:textColor="#177FA0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_statesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="states"
+                android:hint="states"
+                android:textColor="#E82121"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_modemIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lastLinkTime"
+                android:hint="lastLinkTime"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_readModemStorage_modemAddressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/ck_readModemStorage_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:button="@drawable/selector_main_checkbox" />
+
+            <Button
+                android:id="@+id/btn_readModemStorage_Infromation"
+                android:layout_marginTop="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_info_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

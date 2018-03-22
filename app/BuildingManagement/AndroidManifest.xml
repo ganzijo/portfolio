@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuriapp.activitiy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.nuriapp.data.Config"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/nuriicon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.nuriapp.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.BuildingList"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.BuildingInfo"
+            android:icon="@drawable/ic_action_settings"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.SearchBuilding"
+            android:theme="@android:style/Theme.DeviceDefault.Light" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.DetailInfo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.nuriapp.activity.DetailEnergy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.DetailGas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.DetailElectricity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.DetailWater"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nuriapp.activity.Benchmark"
+            android:configChanges="keyboard"
+            android:label="@string/title_activity_benchmark"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

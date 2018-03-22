@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"
+        android:menuCategory="system"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/ActionSetting"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/action_settingicon"
+        android:icon="@drawable/ic_action_settings"
+        android:menuCategory="system"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/ActionSetting"
+        android:visible="true"
+        />
+
+</menu>

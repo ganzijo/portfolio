@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_elecMeterSerial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고객번호"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterFinalReadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최종검침일"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최종검침값"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_elecMeterSerialValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemIdValues"
+                android:text="2_1"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterAddressValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemAddressValues"
+                android:text="x"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterFinalReadDateValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemFinalReadDateValues"
+                android:text="2_3"
+                android:textColor="#177FA0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_elecMeterValueValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="modemStatesValues"
+                android:text="2_4"
+                android:textColor="#E82121"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+
+</LinearLayout>

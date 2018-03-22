@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ReadModem"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_sub_tab"
+            android:text="검침모뎀"
+            android:textColor="#555555"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_EleMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_sub_tab"
+            android:text="전기미터"
+            android:textColor="#555555"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_ReCollectModem"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_sub_tab"
+            android:text="재수집 대상모뎀"
+            android:textColor="#555555"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_ReadModem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_subtab_layout_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_ReadModem_ModemScan"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/selector_common_btn"
+                    android:text="모뎀 스캔"
+                    android:textColor="#666666"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/btn_ReadModem_ReadDataCollect"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/selector_common_btn"
+                    android:text="검침데이터 수집"
+                    android:textColor="#666666"
+                    android:textSize="26sp" />
+                
+                <Button
+                    android:id="@+id/btn_ReadModem_ReGetDataFromServer"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/selector_common_btn"
+                    android:text="서버 연동"
+                    android:textColor="#666666"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="740dp"
+                android:layout_height="1dip"
+                android:layout_marginLeft="30dp"
+                android:background="#bdc3c7" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="모뎀 목록"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="("
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Readmodem_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="999개"
+                        android:textColor="#FF0000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=")"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_ReadModem_AllCollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="전체선택"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <CheckBox
+                        android:id="@+id/ck_ReadModem_AllCollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:button="@drawable/selector_main_checkbox" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_ReadModem_ModemList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="750dp"
+                    android:clickable="true"
+                    android:divider="#bdc3c7"
+                    android:dividerHeight="1dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ElecMeter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_subtab_layout_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rg_elecMeter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                     >
+
+                    <RadioButton
+                        android:id="@+id/rb_Name"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="고객번호"
+                        android:textSize="26sp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Address"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="주소"
+                        android:textSize="26sp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_ElectMeter_Data"
+                        android:layout_width="600dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="입력"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btn_ElectMeter_Search"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/selector_elecmeter_search" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="740dp"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="30dp"
+                    android:background="#bdc3c7" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="미터 목록"
+                            android:textColor="#666666"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="("
+                            android:textColor="#666666"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/tv_electMeter_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="999개"
+                            android:textColor="#FF0000"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=")"
+                            android:textColor="#666666"
+                            android:textSize="25sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                      
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lv_ElecMeter_ModemList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="750dp"
+                        android:clickable="true"
+                        android:divider="#bdc3c7"
+                        android:dividerHeight="1dp"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp" />
+
+               
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Recollect"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_subtab_layout_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_Recollect_ListDelete"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/selector_common_btn"
+                    android:text="목록 삭제"
+                    android:textColor="#666666"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/btn_Recollect_ReadDataCollec"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/selector_common_btn"
+                    android:text="검침데이터 수집"
+                    android:textColor="#666666"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="740dp"
+                android:layout_height="1dip"
+                android:layout_marginLeft="30dp"
+                android:background="#bdc3c7" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/img_subtab_layout_background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center"
+                        android:text="재수집 대상 목록"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="("
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_reCollec_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="999개"
+                        android:textColor="#FF0000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=")"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_Recollect_AllCollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="전체선택"
+                        android:textColor="#666666"
+                        android:textSize="25sp" />
+
+                    <CheckBox
+                        android:id="@+id/ck_Recollect_AllCollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:button="@drawable/selector_main_checkbox" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_Recollect_Modemlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="750dp"
+                    android:clickable="true"
+                    android:divider="#bdc3c7"
+                    android:dividerHeight="1dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

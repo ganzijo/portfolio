@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="660dp"
+    android:background="@drawable/shape_login_et"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="600dp"
+        android:layout_height="660dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/server_title"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="#CD5143"
+            android:gravity="center"
+            android:text="서버 전송 설정"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#eeeeee" />
+
+        <TableRow
+            android:id="@+id/table1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_weight="2.2"
+                android:padding="15dp"
+                android:text="아이피"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_Ip1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/shape_setting_et"
+                android:hint="233"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:text="."
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_Ip2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/shape_setting_et"
+                android:hint="255"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:text="."
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_Ip3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/shape_setting_et"
+                android:hint="255"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:text="."
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_Ip4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_setting_et"
+                android:hint="255"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#eeeeee" />
+
+        <TableRow
+            android:id="@+id/table2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="포트번호"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_Portnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_setting_et"
+                android:hint="  port number"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#eeeeee" />
+
+        <TableRow
+            android:id="@+id/table3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1.9"
+                android:padding="15dp"
+                android:text="재시도횟수"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_RetrySec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_setting_et"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="초후"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_RetryNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_setting_et"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="  회"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#eeeeee" />
+
+        <TableRow
+            android:id="@+id/table4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1.9"
+                android:padding="15dp"
+                android:text="타임아웃"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_TimeoutSec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_setting_et"
+                android:ems="10"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="초"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#eeeeee" />
+
+        <TableRow
+            android:id="@+id/table10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:id="@+id/btn_Transmission_Popup_Confirm"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common2_btn"
+                android:text="확인"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_Transmission_Popup_cancel"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common2_btn"
+                android:padding="10dp"
+                android:text="연동취소"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

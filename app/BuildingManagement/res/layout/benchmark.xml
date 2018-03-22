@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:orientation="vertical"
+    android:isScrollContainer="false"  >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="벤치마크 조건 설정하기"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="벤치마크 비교를 하고 싶은 조건을 선택(V) 하세요."
+        android:textSize="32sp" />
+
+    <CheckBox
+        android:id="@+id/BuildingTypeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp"
+        android:text="빌딩타입"
+        android:textSize="36sp" />
+
+    <com.nuriapp.utils.ToggleButtonGroupTableLayout
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingSet"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:checked="true"
+                android:text="집합건물"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/GeneralBuilding"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="일반건물"
+                android:textSize="26sp" />
+        </TableRow>
+    </com.nuriapp.utils.ToggleButtonGroupTableLayout>
+
+    <CheckBox
+        android:id="@+id/BuildingApplicationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp"
+        android:text="용도"
+        android:textSize="36sp" />
+
+    <com.nuriapp.utils.ToggleButtonGroupTableLayout
+        android:id="@+id/UseTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow android:id="@+id/row1" >
+
+            <RadioButton
+                android:id="@+id/BuildingUse1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="업무시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse2"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="단독주택"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse3"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="공동주택"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingUse4"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="제1종 근린생활시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse5"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="제2종 근린생활시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse6"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="종교시설"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingUse7"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="문화 및 집회시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse8"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="판매시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse9"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="운수시설"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingUse10"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="의료시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse11"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="교육연구시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse12"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="노유자시설"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingUse13"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="수련시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse14"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="운동시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse15"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="숙박시설"
+                android:textSize="26sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/BuildingUse16"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="위탁시설"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse17"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="공장"
+                android:textSize="26sp" />
+
+            <RadioButton
+                android:id="@+id/BuildingUse18"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="창고시설"
+                android:textSize="26sp" />
+        </TableRow>
+    </com.nuriapp.utils.ToggleButtonGroupTableLayout>
+
+    <CheckBox
+        android:id="@+id/AddressCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp"
+        android:text="주소"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/SiCheckBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:enabled="false"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:text="동일 시"
+            android:textSize="26sp" />
+
+        <CheckBox
+            android:id="@+id/GuCheckBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:text="구"
+            android:textSize="26sp" />
+
+        <CheckBox
+            android:id="@+id/DongCheckBox"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:paddingEnd="0dp"
+            android:paddingStart="5dp"
+            android:text="동"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/AreaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp"
+        android:text="면적(m2)"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/CurrentBuildingAreaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="40dp"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/MinMaxAreaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="40dp"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/AreaMinValueEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:enabled="false"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="~"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/AreaMaxValueEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:enabled="false"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/ResetBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="초기화"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/ResetBtn"
+            android:text="저장"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/CancelBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/SaveBtn"
+            android:text="닫기"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+</LinearLayout>

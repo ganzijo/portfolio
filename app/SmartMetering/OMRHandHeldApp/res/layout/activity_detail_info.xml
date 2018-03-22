@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="750dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_detailinfo" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_modemId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text=" 모뎀ID "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_modemIdValues"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_modemAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text=" 주소 "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_modemAddressValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_LastTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text=" 최종 검침일 "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_LastTimeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#177FA0"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text=" 검침상태 "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_detailInfoActivity_stateValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#E82121"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_detailInfo_Success"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_sub_tab"
+            android:text="검침성공"
+            android:textColor="#555555"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_detailInfo_Fail"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_sub_tab"
+            android:text="검침실패"
+            android:textColor="#555555"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_detailInfo_Success"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_subtab_layout_background"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="740dp"
+                android:layout_height="1dip"
+                android:layout_marginLeft="30dp"
+                android:background="#bdc3c7" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lv_detailInfo_Success"
+                    android:layout_width="fill_parent"
+                    android:layout_height="750dp"
+                    android:clickable="true"
+                    android:divider="#bdc3c7"
+                    android:dividerHeight="1dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detailInfo_fail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_subtab_layout_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="740dp"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="30dp"
+                    android:background="#bdc3c7" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/lv_detailInfo_fail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="750dp"
+                        android:clickable="true"
+                        android:divider="#bdc3c7"
+                        android:dividerHeight="1dp"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> 
+    </RelativeLayout>
+
+</LinearLayout>

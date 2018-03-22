@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.nuriapp.activity.MainActivity" >
+
+    
+    <LinearLayout
+        android:id="@+id/inflatedLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/nuri_wordmark" />
+
+        <TextView
+            android:id="@+id/LoginTV"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="48sp" />
+
+        <LinearLayout
+            android:id="@+id/IDLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID   : "
+                android:textSize="48sp" />
+
+            <EditText
+                android:id="@+id/LoginID"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/LoginID"
+                android:inputType="text"
+                android:textSize="42sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PWLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PW : "
+                android:textSize="48sp" />
+
+            <EditText
+                android:id="@+id/LoginPW"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/LoginPW"
+                android:inputType="text"
+                android:password="true"
+                android:textSize="42sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckBoxLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/SaveIdChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="36sp"
+                android:text="@string/SaveId" />
+
+            <CheckBox
+                android:id="@+id/AutoLoginChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="36sp"
+                android:text="@string/AutoLoginChk" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/LoginBtn"
+                android:layout_width="425dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/nuriicon"
+                android:drawablePadding="100dp"
+                android:gravity="start|center_vertical"
+                android:onClick="LoginBtnOnClick"
+                android:textSize="42sp"
+                android:text="LOGIN" />
+
+            <Button
+                android:id="@+id/LogoutBtn"
+                android:layout_width="425dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/nuriicon"
+                android:drawablePadding="86dp"
+                android:gravity="start|center_vertical"
+                android:onClick="LogoutBtnOnClick"
+                android:textSize="36sp"
+                android:text="LOGOUT" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/ConfigBtn"
+            android:layout_width="425dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/ic_action_settings"
+            android:drawablePadding="100dp"
+            android:gravity="start|center_vertical"
+            android:onClick="ConfigBtnOnClick"
+            android:textSize="36sp"
+            android:text="SETTINGS" />
+
+        <Button
+            android:id="@+id/DirectBtn"
+            android:layout_width="425dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/ic_action_about"
+            android:drawablePadding="100dp"
+            android:gravity="start|center_vertical"
+            android:onClick="DirectBtnOnClick"
+            android:textSize="36sp"
+            android:text="BUILDING LIST" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Version"
+        android:textSize="28sp" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript"
+	src="file:///android_asset/fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript"
+	src="file:///android_asset/fusioncharts/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+	FusionCharts.ready(function() {
+		var revenueChart = new FusionCharts({
+			"type" : "msline",
+			"renderAt" : "chartContainer",
+			"width" : "750",
+			"dataFormat" : "json",
+			"dataSource" : {
+				"chart" : {
+					"caption" : "가스 사용 현황",
+					"captionFontSize" : "24",
+					"subcaptionFontSize" : "14",
+					"subcaptionFontBold" : "0",
+					"baseFontSize" : "14",
+					"numberSuffix" : "Nm3",
+					"paletteColors" : "#0000FF,#FFA500,#00FF00",
+					"bgcolor" : "#ffffff",
+					"showBorder" : "1",
+					"showShadow" : "1",
+					"showCanvasBorder" : "0",
+					"usePlotGradientColor" : "0",
+					"legendPosition" : "BOTTOM",
+					"legendBorderAlpha" : "0",
+					"legendShadow" : "0",
+					"legendItemFontSize" : "20",
+					"labelDisplay" : "WRAP",
+					"showAxisLines" : "0",
+					"showAlternateHGridColor" : "0",
+					"divlineThickness" : "2",
+					"divLineDashed" : "1",
+					"divLineDashLen" : "1",
+					"divLineGapLen" : "1",
+					"xAxisName" : "일 단위",
+					"formatnumberscale" : "1", // 숫자 데이터 단위
+					"adjustDiv" : "1",
+					"yAxisMinValue" : "0",
+					"numDivLines" : "4",
+					"showValues" : "0"
+					
+					
+				},
+				<inputData>
+			}
+		});
+		revenueChart.render();
+	})
+</script>
+</head>
+<body>
+	<div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>

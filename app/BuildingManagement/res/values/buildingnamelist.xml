@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="BuildingNameList">
+        <item>ETRI빌딩</item>
+        <item>누리빌딩</item>
+        <item>삼성물산</item>
+    </string-array>
+
+</resources>
